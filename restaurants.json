@@ -1407,6 +1407,19 @@
     "fechaAgregado": "2026-08-16"
   },
   {
+    "id": "wild-tango",
+    "nombre": "Wild Tango",
+    "pais": "Inglaterra",
+    "county": "Leicestershire",
+    "direccion": "14-16 King Street, LE1 6RJ, Leicester, UK",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=14-16%20King%20Street%2C%20LE1%206RJ%2C%20Leicester%2C%20UK",
+    "telefono": "0116 319 7837",
+    "sitioWeb": "https://wildtango.co.uk/",
+    "redes": [],
+    "categoria": "Restaurante",
+    "fechaAgregado": "2026-08-16"
+  },
+  {
     "id": "zoilo",
     "nombre": "Zoilo",
     "pais": "Inglaterra",
