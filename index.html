@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurantes Argentinos en el Reino Unido</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #170a0d;
+    --bg-alt: #1f0f13;
+    --card: #241116;
+    --card-hover: #2c1419;
+    --line: rgba(255,231,226,0.09);
+    --bordo: #7d1935;
+    --bordo-bright: #a52444;
+    --ember: #d98a4f;
+    --ember-soft: rgba(217,138,79,0.14);
+    --text: #f3e6e4;
+    --text-muted: #b6959a;
+    --text-faint: #7c5e63;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Public Sans', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .grill-texture {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: repeating-linear-gradient(
+      -35deg,
+      var(--ember) 0px,
+      var(--ember) 2px,
+      transparent 2px,
+      transparent 34px
+    );
+    z-index: 0;
+  }
+
+  header {
+    position: relative;
+    padding: 56px 24px 40px;
+    text-align: center;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(125,25,53,0.35), transparent 70%),
+      var(--bg-alt);
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+  }
+
+  header::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 3px;
+    background: repeating-linear-gradient(90deg, var(--ember) 0 18px, transparent 18px 26px);
+    opacity: 0.55;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ember);
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(2rem, 5vw, 3.1rem);
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+  }
+
+  header p.sub {
+    color: var(--text-muted);
+    font-size: 15px;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  main {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: -22px 0 28px;
+    padding: 18px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: 0 12px 30px -14px rgba(0,0,0,0.6);
+  }
+
+  .controls input[type="text"],
+  .controls select {
+    background: var(--bg-alt);
+    border: 1px solid var(--line);
+    color: var(--text);
+    border-radius: 9px;
+    padding: 11px 14px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+  }
+
+  .controls input[type="text"] {
+    flex: 1 1 220px;
+  }
+
+  .controls input[type="text"]::placeholder { color: var(--text-faint); }
+
+  .controls select {
+    flex: 1 1 150px;
+    color-scheme: dark;
+  }
+
+  .controls input[type="text"]:focus,
+  .controls select:focus {
+    border-color: var(--ember);
+  }
+
+  .controls button.reset {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--text-muted);
+    border-radius: 9px;
+    padding: 11px 16px;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .controls button.reset:hover { border-color: var(--ember); color: var(--ember); }
+
+  .count-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-faint);
+    font-size: 13px;
+    margin-bottom: 14px;
+    padding: 0 2px;
+  }
+
+  .count-row a {
+    color: var(--ember);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .count-row a:hover { text-decoration: underline; }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 22px;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  .card:hover { border-color: rgba(217,138,79,0.35); background: var(--card-hover); }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 10px;
+  }
+
+  .card h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 19px;
+    margin: 0;
+    color: var(--text);
+  }
+
+  .tag-location {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--ember);
+    background: var(--ember-soft);
+    border-radius: 999px;
+    padding: 4px 10px;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  .card-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 13.5px;
+    color: var(--text-muted);
+    margin-top: 7px;
+    line-height: 1.45;
+  }
+
+  .card-row .icon {
+    flex-shrink: 0;
+    width: 15px;
+    text-align: center;
+    color: var(--text-faint);
+    margin-top: 1px;
+  }
+
+  .card-row a {
+    color: var(--text-muted);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  .card-row a:hover {
+    color: var(--ember);
+    border-bottom-color: var(--ember);
+  }
+
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .social-chip {
+    font-size: 12px;
+    color: var(--text);
+    background: var(--bg-alt);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 5px 12px;
+    text-decoration: none;
+  }
+  .social-chip:hover { border-color: var(--ember); color: var(--ember); }
+
+  .empty {
+    text-align: center;
+    padding: 70px 20px;
+    color: var(--text-faint);
+  }
+  .empty .big { font-size: 34px; margin-bottom: 10px; }
+  .empty p { margin: 4px 0; }
+
+  footer {
+    text-align: center;
+    padding: 30px 20px 50px;
+    color: var(--text-faint);
+    font-size: 12.5px;
+    position: relative;
+    z-index: 1;
+  }
+  footer a { color: var(--ember); text-decoration: none; }
+
+  @media (max-width: 520px) {
+    header { padding: 42px 18px 36px; }
+    .controls { margin-top: -16px; }
+    .card-top { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<div class="grill-texture"></div>
+
+<header>
+  <span class="eyebrow">ARenIN · Argentinos en Inglaterra</span>
+  <h1>Restaurantes Argentinos</h1>
+  <p class="sub">Parrillas, empanadas y sabores de casa, de punta a punta del Reino Unido.</p>
+</header>
+
+<main>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Buscar por nombre, ciudad o dirección…">
+    <select id="pais">
+      <option value="">Todos los países</option>
+    </select>
+    <select id="county">
+      <option value="">Todos los condados</option>
+    </select>
+    <button class="reset" id="reset">Limpiar filtros</button>
+  </div>
+
+  <div class="count-row">
+    <span id="count">Cargando…</span>
+    <a href="https://arenin.uk/sugerir-un-restaurante/" target="_blank" rel="noopener">+ Sugerir un restaurante</a>
+  </div>
+
+  <div class="list" id="list"></div>
+
+  <div class="empty" id="empty" style="display:none;">
+    <div class="big">🍖</div>
+    <p>No encontramos restaurantes con esos filtros.</p>
+    <p>Probá con otra búsqueda o limpiá los filtros.</p>
+  </div>
+</main>
+
+<footer>
+  Catálogo comunitario de <a href="https://arenin.uk" target="_blank" rel="noopener">ARenIN — Argentinos en Inglaterra</a>
+</footer>
+
+<script>
+  const state = { data: [], search: '', pais: '', county: '' };
+
+  const $search = document.getElementById('search');
+  const $pais = document.getElementById('pais');
+  const $county = document.getElementById('county');
+  const $reset = document.getElementById('reset');
+  const $list = document.getElementById('list');
+  const $empty = document.getElementById('empty');
+  const $count = document.getElementById('count');
+
+  function normalize(str) {
+    return (str || '').toString().toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function socialUrl(plataforma, handle) {
+    const p = plataforma.toLowerCase();
+    let h = handle.trim();
+    if (h.startsWith('@')) h = h.slice(1);
+    if (h.startsWith('/')) h = h.slice(1);
+    if (p.includes('instagram')) return 'https://instagram.com/' + h;
+    if (p.includes('facebook')) return 'https://facebook.com/' + h;
+    if (p.includes('tiktok')) return 'https://tiktok.com/@' + h;
+    if (p.includes('twitter') || p === 'x') return 'https://x.com/' + h;
+    return null;
+  }
+
+  function iconFor(platform) {
+    const p = platform.toLowerCase();
+    if (p.includes('instagram')) return 'IG';
+    if (p.includes('facebook')) return 'FB';
+    if (p.includes('tiktok')) return 'TT';
+    if (p.includes('twitter') || p === 'x') return 'X';
+    return platform.slice(0,2).toUpperCase();
+  }
+
+  function renderCard(r) {
+    const loc = [r.county, r.pais].filter(Boolean).join(', ');
+    let html = `<div class="card">
+      <div class="card-top">
+        <h3>${r.nombre}</h3>
+        ${loc ? `<span class="tag-location">${loc}</span>` : ''}
+      </div>`;
+
+    if (r.direccion) {
+      html += `<div class="card-row">
+        <span class="icon">📍</span>
+        <span>${r.mapsUrl ? `<a href="${r.mapsUrl}" target="_blank" rel="noopener">${r.direccion}</a>` : r.direccion}</span>
+      </div>`;
+    }
+    if (r.telefono) {
+      html += `<div class="card-row"><span class="icon">📞</span><span><a href="tel:${r.telefono}">${r.telefono}</a></span></div>`;
+    }
+    if (r.sitioWeb) {
+      html += `<div class="card-row"><span class="icon">🌐</span><span><a href="${r.sitioWeb}" target="_blank" rel="noopener">${r.sitioWeb.replace(/^https?:\/\//, '')}</a></span></div>`;
+    }
+    if (r.redes && r.redes.length) {
+      html += `<div class="socials">`;
+      r.redes.forEach(s => {
+        const url = socialUrl(s.plataforma, s.handle);
+        html += url
+          ? `<a class="social-chip" href="${url}" target="_blank" rel="noopener">${iconFor(s.plataforma)} ${s.handle}</a>`
+          : `<span class="social-chip">${iconFor(s.plataforma)} ${s.handle}</span>`;
+      });
+      html += `</div>`;
+    }
+    html += `</div>`;
+    return html;
+  }
+
+  function applyFilters() {
+    const q = normalize(state.search);
+    return state.data.filter(r => {
+      if (state.pais && r.pais !== state.pais) return false;
+      if (state.county && r.county !== state.county) return false;
+      if (q) {
+        const hay = normalize([r.nombre, r.direccion, r.county, r.pais].join(' '));
+        if (!hay.includes(q)) return false;
+      }
+      return true;
+    });
+  }
+
+  function render() {
+    const filtered = applyFilters();
+    $count.textContent = filtered.length === 1
+      ? '1 restaurante encontrado'
+      : `${filtered.length} restaurantes encontrados`;
+
+    if (!filtered.length) {
+      $list.innerHTML = '';
+      $empty.style.display = 'block';
+      return;
+    }
+    $empty.style.display = 'none';
+    $list.innerHTML = filtered
+      .slice()
+      .sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'))
+      .map(renderCard)
+      .join('');
+  }
+
+  function populateCountyOptions() {
+    const counties = [...new Set(
+      state.data
+        .filter(r => !state.pais || r.pais === state.pais)
+        .map(r => r.county)
+        .filter(Boolean)
+    )].sort((a, b) => a.localeCompare(b, 'es'));
+
+    $county.innerHTML = '<option value="">Todos los condados</option>' +
+      counties.map(c => `<option value="${c}">${c}</option>`).join('');
+  }
+
+  function populatePaisOptions() {
+    const paises = [...new Set(state.data.map(r => r.pais).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b, 'es'));
+    $pais.innerHTML = '<option value="">Todos los países</option>' +
+      paises.map(p => `<option value="${p}">${p}</option>`).join('');
+  }
+
+  $search.addEventListener('input', e => { state.search = e.target.value; render(); });
+  $pais.addEventListener('change', e => {
+    state.pais = e.target.value;
+    state.county = '';
+    populateCountyOptions();
+    render();
+  });
+  $county.addEventListener('change', e => { state.county = e.target.value; render(); });
+  $reset.addEventListener('click', () => {
+    state.search = ''; state.pais = ''; state.county = '';
+    $search.value = ''; $pais.value = ''; $county.value = '';
+    populateCountyOptions();
+    render();
+  });
+
+  fetch('restaurants.json')
+    .then(res => res.json())
+    .then(data => {
+      state.data = data;
+      populatePaisOptions();
+      populateCountyOptions();
+      render();
+    })
+    .catch(() => {
+      $count.textContent = 'No se pudo cargar el listado.';
+    });
+</script>
+
+</body>
+</html>

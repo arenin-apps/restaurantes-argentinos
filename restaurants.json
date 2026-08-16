@@ -1,0 +1,1414 @@
+[
+  {
+    "id": "parrilla-argentinian-grill-musselburgh",
+    "nombre": "Parrilla Argentinian Grill (Musselburgh)",
+    "pais": "Escocia",
+    "county": "East Lothian",
+    "direccion": "76 High St, Musselburgh, EH21 7BX",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=76+High+St,+Musselburgh,+EH21+7BX",
+    "telefono": null,
+    "sitioWeb": "https://parrillaargentiniangrill.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@parrillamusselburgh"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "los-toros",
+    "nombre": "Los Toros",
+    "pais": "Escocia",
+    "county": "Fife",
+    "direccion": "Dunfermline, Fife",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Dunfermline,+Fife",
+    "telefono": null,
+    "sitioWeb": "https://lostoros.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/lostorosdunfermline"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-glasgow",
+    "nombre": "Gaucho Glasgow",
+    "pais": "Escocia",
+    "county": "Glasgow (City of)",
+    "direccion": "7 West Nile Street, Glasgow, G1 2PR",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=7+West+Nile+Street,+Glasgow,+G1+2PR",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchoglasgow"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-edinburgh",
+    "nombre": "Gaucho Edinburgh",
+    "pais": "Escocia",
+    "county": "Midlothian / Edinburgh",
+    "direccion": "4a St Andrew Sq, Edinburgh, EH2 2BD",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=4a+St+Andrew+Sq,+Edinburgh,+EH2+2BD",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchoedinburgh"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "la-querencia",
+    "nombre": "La Querencia",
+    "pais": "Escocia",
+    "county": "Midlothian / Edinburgh",
+    "direccion": "Leith Walk, Edinburgh, EH7 4NY",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Leith+Walk,+Edinburgh,+EH7+4NY",
+    "telefono": null,
+    "sitioWeb": null,
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/laquerenciaedinburgh"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "la-vaca-ardiente",
+    "nombre": "La Vaca Ardiente",
+    "pais": "Escocia",
+    "county": "Midlothian / Edinburgh",
+    "direccion": "215 St John's Rd, Corstorphine, Edinburgh, EH12 7UU",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=215+St+John's+Rd,+Corstorphine,+Edinburgh,+EH12+7UU",
+    "telefono": null,
+    "sitioWeb": "https://lavacaardiente.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@lavacaardiente"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "los-amigos",
+    "nombre": "Los Amigos",
+    "pais": "Escocia",
+    "county": "Midlothian / Edinburgh",
+    "direccion": "17 Dalry Rd, Haymarket, Edinburgh, EH11 2BQ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=17+Dalry+Rd,+Haymarket,+Edinburgh,+EH11+2BQ",
+    "telefono": null,
+    "sitioWeb": "https://losamigossteakhouse.com",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/losamigossteakhouse"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "los-argentinos",
+    "nombre": "Los Argentinos",
+    "pais": "Escocia",
+    "county": "Midlothian / Edinburgh",
+    "direccion": "28-30 West Preston Street, Edinburgh, EH8 9PZ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=28-30+West+Preston+Street,+Edinburgh,+EH8+9PZ",
+    "telefono": null,
+    "sitioWeb": "https://losargentinos.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/losargentinos.edinburgh"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "parrilla-argentinian-grill-loanhead",
+    "nombre": "Parrilla Argentinian Grill (Loanhead)",
+    "pais": "Escocia",
+    "county": "Midlothian / Edinburgh",
+    "direccion": "30-34 Fountain Place, Loanhead, EH20 9DU",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=30-34+Fountain+Place,+Loanhead,+EH20+9DU",
+    "telefono": null,
+    "sitioWeb": "https://parrillaargentiniangrill.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@parrillaloanhead"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-cardiff",
+    "nombre": "Gaucho Cardiff",
+    "pais": "Gales",
+    "county": "South Glamorgan",
+    "direccion": "St David's Dewi Sant, 19 The Hayes, Cardiff, CF10 2EL",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=St+David's+Dewi+Sant,+19+The+Hayes,+Cardiff,+CF10+2EL",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchocardiff"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buenasado-reading",
+    "nombre": "Buenasado Reading",
+    "pais": "Inglaterra",
+    "county": "Berkshire",
+    "direccion": "Level 1, Holy Brook Walk, The Oracle, Reading, RG1 2AQ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Level+1,+Holy+Brook+Walk,+The+Oracle,+Reading,+RG1+2AQ",
+    "telefono": null,
+    "sitioWeb": "https://buenasado.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@buenasadosteakhouse"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buenasado-bristol",
+    "nombre": "Buenasado Bristol",
+    "pais": "Inglaterra",
+    "county": "Bristol (City of)",
+    "direccion": "96a Whiteladies Rd, Clifton, Bristol, BS8 2QX",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=96a+Whiteladies+Rd,+Clifton,+Bristol,+BS8+2QX",
+    "telefono": null,
+    "sitioWeb": "https://buenasado.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@buenasadosteakhouse"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "chamuyo-brighton",
+    "nombre": "Chamuyo Brighton",
+    "pais": "Inglaterra",
+    "county": "East Sussex",
+    "direccion": "62 Middle St, Brighton, BN1 1AL",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=62+Middle+St,+Brighton,+BN1+1AL",
+    "telefono": null,
+    "sitioWeb": "https://chamuyo.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/chamuyosteakhouse"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "latinoamerica",
+    "nombre": "LatinoAmérica",
+    "pais": "Inglaterra",
+    "county": "East Sussex",
+    "direccion": "Hove / Brighton, East Sussex",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hove+/+Brighton,+East+Sussex",
+    "telefono": null,
+    "sitioWeb": "https://latinoamerica.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/latinoamericabrighton"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "abasto-connaught-village",
+    "nombre": "Abasto Connaught Village",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "55-57 Connaught Street, London, W2 2BB",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=55-57+Connaught+Street,+London,+W2+2BB",
+    "telefono": null,
+    "sitioWeb": "https://abasto.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@abasto_london"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "alfonsina",
+    "nombre": "Alfonsina",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "50-52 Long Lane, London, EC1A 9EJ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=50-52+Long+Lane,+London,+EC1A+9EJ",
+    "telefono": null,
+    "sitioWeb": null,
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@alfonsinalondon"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "barra-10",
+    "nombre": "Barra 10",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "Unit 16 Broadway Market, Tooting High Street, London, SW17 0RL",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Unit+16+Broadway+Market,+Tooting+High+Street,+London,+SW17+0RL",
+    "telefono": null,
+    "sitioWeb": "https://barra10.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@barra10uk / Facebook: /barra10uk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "bife-london",
+    "nombre": "Bife London",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "40-42 Middlesex St, London, E1 7EX",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=40-42+Middlesex+St,+London,+E1+7EX",
+    "telefono": null,
+    "sitioWeb": "https://bife.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook / Instagram",
+        "handle": "@bifelondon"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "bocas",
+    "nombre": "Bocas",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "180 St John Street, London, EC1V 4JY",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=180+St+John+Street,+London,+EC1V+4JY",
+    "telefono": null,
+    "sitioWeb": "https://bocas.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook / Instagram",
+        "handle": "@bocaslondon"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buen-ayre",
+    "nombre": "Buen Ayre",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "50 Broadway Market, London, E8 4QJ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=50+Broadway+Market,+London,+E8+4QJ",
+    "telefono": null,
+    "sitioWeb": "https://buenayre.net",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/buenayrerestaurant"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "bueno-argentinian-eatery-steakhouse",
+    "nombre": "Bueno Argentinian Eatery & Steakhouse",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "252 King's Road, Chelsea, London, SW3 5UA",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=252+King's+Road,+Chelsea,+London,+SW3+5UA",
+    "telefono": null,
+    "sitioWeb": null,
+    "redes": [],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buenos-aires-cafe-blackheath",
+    "nombre": "Buenos Aires Café Blackheath",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "17 Royal Parade, Blackheath, London, SE3 0TL",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=17+Royal+Parade,+Blackheath,+London,+SE3+0TL",
+    "telefono": null,
+    "sitioWeb": "https://buenosairescafe.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/buenosairescafeblackheath"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buenos-aires-steakhouse-chiswick",
+    "nombre": "Buenos Aires Steakhouse Chiswick",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "32 Turnham Green Terrace, Chiswick, London W4 1QP",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=32+Turnham+Green+Terrace,+Chiswick,+London+W4+1QP",
+    "telefono": null,
+    "sitioWeb": "https://barestaurant.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@buenosairessteakhouses"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buenos-aires-steakhouse-wimbledon",
+    "nombre": "Buenos Aires Steakhouse Wimbledon",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "62 Wimbledon Hill Road, Wimbledon, London, SW19 7PA",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=62+Wimbledon+Hill+Road,+Wimbledon,+London,+SW19+7PA",
+    "telefono": null,
+    "sitioWeb": "https://barestaurant.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@buenosairessteakhouses"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "casa-malevo",
+    "nombre": "Casa Malevo",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "23 Connaught Street, London, W2 2AY",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=23+Connaught+Street,+London,+W2+2AY",
+    "telefono": null,
+    "sitioWeb": "https://casamalevo.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@casamalevo"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "chacarero-empanada-house",
+    "nombre": "Chacarero Empanada House",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "7 Lordship Ln, London, SE22 8EW",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=7+Lordship+Ln,+London,+SE22+8EW",
+    "telefono": null,
+    "sitioWeb": "https://chacarerolondon.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@chacarerolondon / Facebook"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "chamuyo-bayswater",
+    "nombre": "Chamuyo Bayswater",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "66 Inverness Mews, Bayswater, London, W2 3JQ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=66+Inverness+Mews,+Bayswater,+London,+W2+3JQ",
+    "telefono": null,
+    "sitioWeb": "https://chamuyo.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/chamuyosteakhouse"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "chango-bank-royal-exchange",
+    "nombre": "Chango Bank (Royal Exchange)",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "31 Royal Exchange, City of London, London, EC3V 3LP",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=31+Royal+Exchange,+City+of+London,+London,+EC3V+3LP",
+    "telefono": null,
+    "sitioWeb": "https://chango.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@changoempanadasuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "chango-highgate",
+    "nombre": "Chango Highgate",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "82 Highgate High St, London, N6 5HX",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=82+Highgate+High+St,+London,+N6+5HX",
+    "telefono": null,
+    "sitioWeb": "https://chango.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@changoempanadasuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "chango-high-street-kensington",
+    "nombre": "Chango High Street Kensington",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "Unit 5B, Kensington Arcade, Kensington High St, London, W8 5SF",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Unit+5B,+Kensington+Arcade,+Kensington+High+St,+London,+W8+5SF",
+    "telefono": null,
+    "sitioWeb": "https://chango.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@changoempanadasuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "chango-mayfair",
+    "nombre": "Chango Mayfair",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "27 Avery Row, London, W1K 4AY",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=27+Avery+Row,+London,+W1K+4AY",
+    "telefono": null,
+    "sitioWeb": "https://chango.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@changoempanadasuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "chango-parsons-green",
+    "nombre": "Chango Parsons Green",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "64 New Kings Rd, London, SW6 4LT",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=64+New+Kings+Rd,+London,+SW6+4LT",
+    "telefono": null,
+    "sitioWeb": "https://chango.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@changoempanadasuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "chango-wandsworth-town",
+    "nombre": "Chango Wandsworth Town",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "503 Old York Rd, London, SW18 1TF",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=503+Old+York+Rd,+London,+SW18+1TF",
+    "telefono": null,
+    "sitioWeb": "https://chango.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@changoempanadasuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "chango-wimbledon",
+    "nombre": "Chango Wimbledon",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "12 High Street, Wimbledon, London, SW19 5DX",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=12+High+Street,+Wimbledon,+London,+SW19+5DX",
+    "telefono": null,
+    "sitioWeb": "https://chango.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@changoempanadasuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "chimichurris",
+    "nombre": "Chimichurris",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "132 Southwark Bridge Rd, London, SE1 0DG",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=132+Southwark+Bridge+Rd,+London,+SE1+0DG",
+    "telefono": null,
+    "sitioWeb": "https://chimichurris.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@chimichurrisuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-broadgate",
+    "nombre": "Gaucho Broadgate",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "5 Finsbury Avenue, London, EC2M 2PG",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=5+Finsbury+Avenue,+London,+EC2M+2PG",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchogroup"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-canary-wharf",
+    "nombre": "Gaucho Canary Wharf",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "29 Westferry Circus, London, E14 8RR",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=29+Westferry+Circus,+London,+E14+8RR",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchogroup"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-chancery-lane",
+    "nombre": "Gaucho Chancery Lane",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "125 Chancery Lane, London, WC2A 1PU",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=125+Chancery+Lane,+London,+WC2A+1PU",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchogroup"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-charlotte-street",
+    "nombre": "Gaucho Charlotte Street",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "60A Charlotte Street, London, W1T 2NU",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=60A+Charlotte+Street,+London,+W1T+2NU",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchogroup"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-city",
+    "nombre": "Gaucho City",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "1 Bell Inn Yard, London, EC3V 0BL",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=1+Bell+Inn+Yard,+London,+EC3V+0BL",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchogroup"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-covent-garden",
+    "nombre": "Gaucho Covent Garden",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "8-9 James St, London, WC2E 8BT",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=8-9+James+St,+London,+WC2E+8BT",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchogroup"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-hampstead",
+    "nombre": "Gaucho Hampstead",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "64 Heath Street, London, NW3 1DN",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=64+Heath+Street,+London,+NW3+1DN",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchogroup"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-piccadilly",
+    "nombre": "Gaucho Piccadilly",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "25 Swallow Street, London, W1B 4QR",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=25+Swallow+Street,+London,+W1B+4QR",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchogroup"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-richmond",
+    "nombre": "Gaucho Richmond",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "The Towpath, Riverside, Richmond, TW10 6UJ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The+Towpath,+Riverside,+Richmond,+TW10+6UJ",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/GauchoRichmond"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-sloane-avenue",
+    "nombre": "Gaucho Sloane Avenue",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "89 Sloane Avenue, London, SW3 3DX",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=89+Sloane+Avenue,+London,+SW3+3DX",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchogroup"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-the-o2",
+    "nombre": "Gaucho The O2",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "Peninsula Square, London, SE10 0DX",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Peninsula+Square,+London,+SE10+0DX",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchogroup"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-tower-bridge",
+    "nombre": "Gaucho Tower Bridge",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "2 More London Place, London, SE1 2AP",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=2+More+London+Place,+London,+SE1+2AP",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchogroup"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "la-patagonia",
+    "nombre": "La Patagonia",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "31 Camden High Street, London, NW1 7JE",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=31+Camden+High+Street,+London,+NW1+7JE",
+    "telefono": null,
+    "sitioWeb": "https://lapatagonia.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@lapatagoniacamden"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "la-plata-steakhouse",
+    "nombre": "La Plata Steakhouse",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "109 Sheen Lane, London, SW14 8AE",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=109+Sheen+Lane,+London,+SW14+8AE",
+    "telefono": null,
+    "sitioWeb": null,
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@laplatasteakhouse"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "malevo-tower-bridge",
+    "nombre": "Malevo Tower Bridge",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "52 Tanner Street, London, SE1 3PH",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=52+Tanner+Street,+London,+SE1+3PH",
+    "telefono": null,
+    "sitioWeb": "https://malevotowerbridge.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/malevotowerbridge"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "ok13-grill",
+    "nombre": "OK13 Grill",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "16a Tooting Bec Road, London, SW17 8BD",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=16a+Tooting+Bec+Road,+London,+SW17+8BD",
+    "telefono": null,
+    "sitioWeb": "https://ok13.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@ok13grill / Facebook"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "portena-borough-market",
+    "nombre": "Porteña Borough Market",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "7A Stoney Street, London, SE1 9AA",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=7A+Stoney+Street,+London,+SE1+9AA",
+    "telefono": null,
+    "sitioWeb": "https://portena.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@portenauk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "portena-brixton-village",
+    "nombre": "Porteña Brixton Village",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "Unit 26 Granville Arcade, Brixton, London, SW9 8PS",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Unit+26+Granville+Arcade,+Brixton,+London,+SW9+8PS",
+    "telefono": null,
+    "sitioWeb": "https://brixtonvillage.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@portenauk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "santa-maria-del-sur",
+    "nombre": "Santa Maria Del Sur",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "129 Queenstown Road, Battersea, London, SW8 3RH",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=129+Queenstown+Road,+Battersea,+London,+SW8+3RH",
+    "telefono": null,
+    "sitioWeb": "https://santamariadelsur.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@santamariadelsur"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "sucre",
+    "nombre": "Sucre",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "47b Great Marlborough Street, Soho, London, W1F 7JP",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=47b+Great+Marlborough+Street,+Soho,+London,+W1F+7JP",
+    "telefono": null,
+    "sitioWeb": "https://sucrerestaurant.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@sucre.london"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "the-bull-steak-expert",
+    "nombre": "The Bull Steak Expert",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "54 Red Lion Street, London, WC1R 4PD",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=54+Red+Lion+Street,+London,+WC1R+4PD",
+    "telefono": null,
+    "sitioWeb": "https://thebullsteakexpertrestaurant.co.uk",
+    "redes": [],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "zoilo",
+    "nombre": "Zoilo",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "9 Duke Street, Marylebone, London, W1U 3EG",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=9+Duke+Street,+Marylebone,+London,+W1U+3EG",
+    "telefono": null,
+    "sitioWeb": "https://zoilo.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@zoilo_london"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-manchester",
+    "nombre": "Gaucho Manchester",
+    "pais": "Inglaterra",
+    "county": "Greater Manchester",
+    "direccion": "2a St Mary's Street, Manchester, M3 2LB",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=2a+St+Mary's+Street,+Manchester,+M3+2LB",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchomanchester"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buenasado-bluewater",
+    "nombre": "Buenasado Bluewater",
+    "pais": "Inglaterra",
+    "county": "Kent",
+    "direccion": "Bluewater Shopping Centre, Greenhithe, Kent, DA9 9ST",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bluewater+Shopping+Centre,+Greenhithe,+Kent,+DA9+9ST",
+    "telefono": null,
+    "sitioWeb": "https://buenasado.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@buenasadosteakhouse"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buenos-aires-nights-ashford",
+    "nombre": "Buenos Aires Nights Ashford",
+    "pais": "Inglaterra",
+    "county": "Kent",
+    "direccion": "9 North Street, Ashford, Kent, TN24 8LF",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=9+North+Street,+Ashford,+Kent,+TN24+8LF",
+    "telefono": null,
+    "sitioWeb": "https://ba-nights.co.uk/ashford",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/banightsuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buenos-aires-nights-canterbury",
+    "nombre": "Buenos Aires Nights Canterbury",
+    "pais": "Inglaterra",
+    "county": "Kent",
+    "direccion": "13 Mercery Lane, Canterbury, Kent, CT1 2JJ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=13+Mercery+Lane,+Canterbury,+Kent,+CT1+2JJ",
+    "telefono": null,
+    "sitioWeb": "https://ba-nights.co.uk/canterbury",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/banightsuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buenos-aires-nights-maidstone",
+    "nombre": "Buenos Aires Nights Maidstone",
+    "pais": "Inglaterra",
+    "county": "Kent",
+    "direccion": "63 High Street, Maidstone, Kent, ME14 1SR",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=63+High+Street,+Maidstone,+Kent,+ME14+1SR",
+    "telefono": null,
+    "sitioWeb": "https://ba-nights.co.uk/maidstone",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/banightsuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "sonrisa-leicester",
+    "nombre": "Sonrisa Leicester",
+    "pais": "Inglaterra",
+    "county": "Leicestershire",
+    "direccion": "4 St Martins, Leicester, LE1 5DB",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=4+St+Martins,+Leicester,+LE1+5DB",
+    "telefono": null,
+    "sitioWeb": "https://sonrisa-restaurant.co.uk / fiestadelasado.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook / Instagram",
+        "handle": "@sonrisaleicester"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-liverpool",
+    "nombre": "Gaucho Liverpool",
+    "pais": "Inglaterra",
+    "county": "Merseyside",
+    "direccion": "7 Water Street, Liverpool, L2 0RD",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=7+Water+Street,+Liverpool,+L2+0RD",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gaucholiverpool"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "el-gaucho",
+    "nombre": "El Gaucho",
+    "pais": "Inglaterra",
+    "county": "North Yorkshire",
+    "direccion": "48 Walmgate, York, YO1 9TJ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=48+Walmgate,+York,+YO1+9TJ",
+    "telefono": null,
+    "sitioWeb": "https://elgauchoyork.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/elgauchoyork"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "la-boca",
+    "nombre": "La Boca",
+    "pais": "Inglaterra",
+    "county": "South Yorkshire",
+    "direccion": "Doncaster, South Yorkshire",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Doncaster,+South+Yorkshire",
+    "telefono": null,
+    "sitioWeb": "https://labocadoncaster.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": "/labocadoncaster"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buenasado-walton-on-thames",
+    "nombre": "Buenasado Walton-on-Thames",
+    "pais": "Inglaterra",
+    "county": "Surrey",
+    "direccion": "6 The Heart, New Zealand Ave, Walton-on-Thames, KT12 1GH",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=6+The+Heart,+New+Zealand+Ave,+Walton-on-Thames,+KT12+1GH",
+    "telefono": null,
+    "sitioWeb": "https://buenasado.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@buenasadosteakhouse"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buenos-aires-steakhouse-reigate",
+    "nombre": "Buenos Aires Steakhouse Reigate",
+    "pais": "Inglaterra",
+    "county": "Surrey",
+    "direccion": "2-4 London Rd, Reigate, RH2 9AN",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=2-4+London+Rd,+Reigate,+RH2+9AN",
+    "telefono": null,
+    "sitioWeb": "https://barestaurant.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@buenosairessteakhouses"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "buenos-aires-steakhouse-richmond",
+    "nombre": "Buenos Aires Steakhouse Richmond",
+    "pais": "Inglaterra",
+    "county": "Surrey",
+    "direccion": "13-19 The Square, Old Palace Terrace, Richmond, TW9 1EA",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=13-19+The+Square,+Old+Palace+Terrace,+Richmond,+TW9+1EA",
+    "telefono": null,
+    "sitioWeb": "https://barestaurant.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@buenosairessteakhouses"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "chango-richmond",
+    "nombre": "Chango Richmond",
+    "pais": "Inglaterra",
+    "county": "Surrey",
+    "direccion": "3 Paved Ct, Richmond, TW9 1LZ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=3+Paved+Ct,+Richmond,+TW9+1LZ",
+    "telefono": null,
+    "sitioWeb": "https://chango.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@changoempanadasuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-newcastle",
+    "nombre": "Gaucho Newcastle",
+    "pais": "Inglaterra",
+    "county": "Tyne and Wear",
+    "direccion": "2, 6 Market St, Newcastle, NE1 6JF",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=2,+6+Market+St,+Newcastle,+NE1+6JF",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchonewcastle"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "bar-buenos-aires-fiesta-solihull",
+    "nombre": "Bar Buenos Aires (Fiesta Solihull)",
+    "pais": "Inglaterra",
+    "county": "West Midlands",
+    "direccion": "177 Stratford Road, Shirley, Solihull, B90 3AX",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=177+Stratford+Road,+Shirley,+Solihull,+B90+3AX",
+    "telefono": null,
+    "sitioWeb": "https://fiestadelasado.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook / Instagram",
+        "handle": "@fiestadelasado"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "fiesta-del-asado-edgbaston",
+    "nombre": "Fiesta del Asado Edgbaston",
+    "pais": "Inglaterra",
+    "county": "West Midlands",
+    "direccion": "229 Hagley Road, Edgbaston, Birmingham, B16 9RP",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=229+Hagley+Road,+Edgbaston,+Birmingham,+B16+9RP",
+    "telefono": null,
+    "sitioWeb": "https://fiestadelasado.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook / Instagram",
+        "handle": "@fiestadelasado"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "fiesta-del-asado-shirley",
+    "nombre": "Fiesta del Asado Shirley",
+    "pais": "Inglaterra",
+    "county": "West Midlands",
+    "direccion": "177 Stratford Road, Shirley, Solihull, B90 3AX",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=177+Stratford+Road,+Shirley,+Solihull,+B90+3AX",
+    "telefono": null,
+    "sitioWeb": "https://fiestadelasado.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook / Instagram",
+        "handle": "@fiestadelasado"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-birmingham",
+    "nombre": "Gaucho Birmingham",
+    "pais": "Inglaterra",
+    "county": "West Midlands",
+    "direccion": "55 Colmore Row, Birmingham, B3 2AA",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=55+Colmore+Row,+Birmingham,+B3+2AA",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gauchobirmingham"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "bife-haywards-heath",
+    "nombre": "Bife Haywards Heath",
+    "pais": "Inglaterra",
+    "county": "West Sussex",
+    "direccion": "56-58 The Broadway, Haywards Heath, RH16 3AL",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=56-58+The+Broadway,+Haywards+Heath,+RH16+3AL",
+    "telefono": null,
+    "sitioWeb": "https://bife.co.uk",
+    "redes": [
+      {
+        "plataforma": "Facebook / Instagram",
+        "handle": "@bifesussex"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "gaucho-leeds",
+    "nombre": "Gaucho Leeds",
+    "pais": "Inglaterra",
+    "county": "West Yorkshire",
+    "direccion": "21-22 Park Row, Leeds, LS1 5JF",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=21-22+Park+Row,+Leeds,+LS1+5JF",
+    "telefono": null,
+    "sitioWeb": "https://gauchorestaurants.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@gaucholeeds"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "flame-restaurant-asador-grill",
+    "nombre": "Flame Restaurant (Asador Grill)",
+    "pais": "Irlanda del Norte",
+    "county": "County Antrim / Belfast",
+    "direccion": "46 Howard St, Belfast city centre, BT1 6PG",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=46+Howard+St,+Belfast+city+centre,+BT1+6PG",
+    "telefono": null,
+    "sitioWeb": "https://belfastone.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@flamebelfast"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  },
+  {
+    "id": "taylor-clay-grill-bullitt-hotel",
+    "nombre": "Taylor & Clay Grill (Bullitt Hotel)",
+    "pais": "Irlanda del Norte",
+    "county": "County Antrim / Belfast",
+    "direccion": "40a Church Lane, Belfast city centre, BT1 4QN",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=40a+Church+Lane,+Belfast+city+centre,+BT1+4QN",
+    "telefono": null,
+    "sitioWeb": "https://bullitthotel.com",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@bullittbelfast"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-08-16"
+  }
+]
