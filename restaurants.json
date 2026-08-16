@@ -1303,25 +1303,7 @@
     "categoria": null,
     "fechaAgregado": "2026-08-16"
   },
-  {
-    "id": "portena-brixton-village",
-    "nombre": "Porteña Brixton Village",
-    "pais": "Inglaterra",
-    "county": "Greater London",
-    "direccion": "Unit 26 Granville Arcade, Brixton, London, SW9 8PS",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Unit+26+Granville+Arcade,+Brixton,+London,+SW9+8PS",
-    "telefono": null,
-    "sitioWeb": "https://brixtonvillage.com",
-    "redes": [
-      {
-        "plataforma": "Instagram",
-        "handle": "@portenauk"
-      }
-    ],
-    "categoria": null,
-    "fechaAgregado": "2026-08-16"
-  },
-  {
+    {
     "id": "santa-maria-del-sur",
     "nombre": "Santa Maria Del Sur",
     "pais": "Inglaterra",
