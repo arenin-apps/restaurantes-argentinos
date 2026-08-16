@@ -1,23 +1,5 @@
 [
   {
-    "id": "abasto-connaught-village",
-    "nombre": "Abasto Connaught Village",
-    "pais": "Inglaterra",
-    "county": "Greater London",
-    "direccion": "55-57 Connaught Street, London, W2 2BB",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=55-57+Connaught+Street,+London,+W2+2BB",
-    "telefono": null,
-    "sitioWeb": "https://abasto.co.uk",
-    "redes": [
-      {
-        "plataforma": "Instagram",
-        "handle": "@abasto_london"
-      }
-    ],
-    "categoria": null,
-    "fechaAgregado": "2026-08-16"
-  },
-  {
     "id": "alfonsina",
     "nombre": "Alfonsina",
     "pais": "Inglaterra",
