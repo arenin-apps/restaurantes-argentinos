@@ -6,7 +6,7 @@
 <title>Restaurantes Argentinos en el Reino Unido</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg: #170a0d;
@@ -30,7 +30,7 @@
     padding: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: 'Public Sans', -apple-system, sans-serif;
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -80,11 +80,11 @@
   }
 
   h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
     font-size: clamp(2rem, 5vw, 3.1rem);
     margin: 0 0 12px;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
   }
 
   header p.sub {
@@ -197,10 +197,11 @@
   }
 
   .card h3 {
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
     font-size: 19px;
     margin: 0;
+    letter-spacing: -0.01em;
     color: var(--text);
   }
 
@@ -378,7 +379,7 @@
       </div>`;
     }
     if (r.telefono) {
-      html += `<div class="card-row"><span class="icon">📞</span><span><a href="tel:${r.telefono}">${r.telefono}</a></span></div>`;
+      html += `<div class="card-row"><span class="icon">📞</span><span style="font-family:'IBM Plex Mono',monospace;"><a href="tel:${r.telefono}">${r.telefono}</a></span></div>`;
     }
     if (r.sitioWeb) {
       html += `<div class="card-row"><span class="icon">🌐</span><span><a href="${r.sitioWeb}" target="_blank" rel="noopener">${r.sitioWeb.replace(/^https?:\/\//, '')}</a></span></div>`;
