@@ -1,0 +1,39 @@
+name: Agregar restaurante desde URL
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'URL del sitio web o red social del restaurante'
+        required: true
+        type: string
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Extraer datos del restaurante
+        env:
+          RESTAURANT_URL: ${{ inputs.url }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node extract-restaurant-from-url.js
+
+      - name: Commit y push si hubo cambios
+        run: |
+          git config user.name "arenin-bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet restaurants.json; then
+            echo "Sin cambios en restaurants.json"
+          else
+            git add restaurants.json
+            git commit -m "Agregar restaurante desde ${{ inputs.url }}"
+            git push
+          fi
