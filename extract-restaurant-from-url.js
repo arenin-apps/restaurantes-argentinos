@@ -56,16 +56,36 @@ function htmlToText(html) {
 }
 
 async function fetchPageText(url) {
-  const res = await fetch(url, {
-    headers: { 'User-Agent': 'Mozilla/5.0 (compatible; ARenINBot/1.0)' }
-  });
-  if (!res.ok) {
-    throw new Error(`No se pudo acceder a ${url} (status ${res.status})`);
+  try {
+    const res = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        'Accept-Language': 'en-GB,en;q=0.9,es;q=0.8'
+      }
+    });
+    if (!res.ok) {
+      throw new Error(`No se pudo acceder a ${url} (status ${res.status})`);
+    }
+    const html = await res.text();
+    return htmlToText(html).slice(0, 12000);
+  } catch (err) {
+    // FIX: algunos sitios (sobre todo con Cloudflare u otro firewall)
+    // bloquean el fetch directo por completo — a veces por el
+    // User-Agent, a veces por bloquear tráfico de IPs de datacenter
+    // como las de GitHub Actions. En ese caso el error ni siquiera es
+    // un status HTTP, es un fallo de conexión ("fetch failed"). Antes
+    // de rendirse, reintentamos a través del mismo proxy de
+    // renderizado que ya usa la agenda para sitios difíciles.
+    console.log(`⚠️ Fetch directo falló (${err.message}). Reintentando vía proxy de renderizado...`);
+    const proxyRes = await fetch(`https://r.jina.ai/${url}`, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; ARenINBot/1.0)' }
+    });
+    if (!proxyRes.ok) {
+      throw new Error(`El proxy de renderizado tampoco pudo acceder a ${url} (status ${proxyRes.status})`);
+    }
+    const html = await proxyRes.text();
+    return htmlToText(html).slice(0, 12000);
   }
-  const html = await res.text();
-  const text = htmlToText(html);
-  // Limitamos el tamaño para no gastar cuota de más.
-  return text.slice(0, 12000);
 }
 
 function buildPrompt(url, pageText) {
