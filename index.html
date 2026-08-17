@@ -18,9 +18,9 @@
     --bordo-bright: #a52444;
     --ember: #d98a4f;
     --ember-soft: rgba(217,138,79,0.14);
-    --text: #f3e6e4;
-    --text-muted: #b6959a;
-    --text-faint: #7c5e63;
+    --text: #faf1ef;
+    --text-muted: #d8b8b3;
+    --text-faint: #b3919a;
   }
 
   * { box-sizing: border-box; }
@@ -388,8 +388,10 @@
     return km < 1 ? `${Math.round(km * 1000)} m` : `${km.toFixed(1)} km`;
   }
 
-  function showNearestStatus(message, isError) {
-    $nearestStatus.textContent = message;
+  function showNearestStatus(message, isError, showFallbackLink) {
+    $nearestStatus.innerHTML = message
+      ? message + (showFallbackLink ? ' <a href="https://arenin-apps.github.io/restaurantes-argentinos/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Abrir en una pestaña nueva</a>' : '')
+      : '';
     $nearestStatus.className = 'nearest-status' + (isError ? ' error' : '');
     $nearestStatus.style.display = message ? 'block' : 'none';
   }
@@ -431,12 +433,14 @@
         $nearest.disabled = false;
         $nearest.textContent = '📍 El más cercano';
         let msg = 'No pudimos obtener tu ubicación.';
+        let showFallback = false;
         if (err.code === err.PERMISSION_DENIED) {
-          msg = 'Necesitamos permiso de ubicación para mostrarte los más cercanos. Revisá los permisos del sitio en tu navegador.';
+          msg = 'Este navegador no permite compartir tu ubicación dentro de esta página embebida.';
+          showFallback = true;
         } else if (err.code === err.TIMEOUT) {
           msg = 'La búsqueda de ubicación tardó demasiado. Probá de nuevo.';
         }
-        showNearestStatus(msg, true);
+        showNearestStatus(msg, true, showFallback);
       },
       { enableHighAccuracy: true, timeout: 10000, maximumAge: 300000 }
     );
