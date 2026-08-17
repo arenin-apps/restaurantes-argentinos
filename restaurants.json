@@ -723,6 +723,19 @@
     "fechaAgregado": "2026-08-16"
   },
   {
+    "id": "florencio",
+    "nombre": "Florencio",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "14 Seymour Place, W1H 7NF London",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=14%20Seymour%20Place%2C%20W1H%207NF%20London",
+    "telefono": "020 8143 8232",
+    "sitioWeb": "https://www.florenciopizza.com/",
+    "redes": [],
+    "categoria": "Restaurante",
+    "fechaAgregado": "2026-08-17"
+  },
+  {
     "id": "gaucho-birmingham",
     "nombre": "Gaucho Birmingham",
     "pais": "Inglaterra",
