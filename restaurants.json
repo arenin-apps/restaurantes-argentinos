@@ -645,6 +645,19 @@
     "longitude": -0.098987
   },
   {
+    "id": "de-nadas-empanadas",
+    "nombre": "De Nadas Empanadas",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "61 Golborne Rd, London, W10 5NR (Múltiples ubicaciones)",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=61%20Golborne%20Rd%2C%20London%2C%20W10%205NR%20(M%C3%BAltiples%20ubicaciones)",
+    "telefono": "020 4553 8070",
+    "sitioWeb": "https://denadas.co.uk/our-locations/",
+    "redes": [],
+    "categoria": "Empanadas",
+    "fechaAgregado": "2026-08-17"
+  },
+  {
     "id": "el-gaucho",
     "nombre": "El Gaucho",
     "pais": "Inglaterra",
