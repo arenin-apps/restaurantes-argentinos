@@ -133,7 +133,7 @@ async function callGemini(prompt) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: { temperature: 0.1 }
+      generationConfig: { temperature: 0.1, responseMimeType: 'application/json' }
     })
   });
   if (!res.ok) {
@@ -146,7 +146,20 @@ async function callGemini(prompt) {
     throw new Error('Gemini no devolvió contenido utilizable.');
   }
   const cleaned = raw.replace(/```json|```/g, '').trim();
-  return JSON.parse(cleaned);
+  const parsed = JSON.parse(cleaned);
+
+  // FIX: a veces el modelo envuelve el arreglo en un objeto (ej.
+  // {"locales": [...]}) aunque el prompt pida el arreglo directo. Si
+  // pasa eso, buscamos la primera propiedad que sea un arreglo y la
+  // usamos. Si en cambio devolvió un solo objeto (formato viejo, un
+  // restaurante sin arreglo), lo envolvemos en un arreglo de uno.
+  if (Array.isArray(parsed)) return parsed;
+  if (parsed && typeof parsed === 'object') {
+    const arrayProp = Object.values(parsed).find((v) => Array.isArray(v));
+    if (arrayProp) return arrayProp;
+    if (parsed.nombre) return [parsed];
+  }
+  return parsed;
 }
 
 function buildMapsUrl(direccion) {
