@@ -98,22 +98,28 @@ Texto de la página (puede incluir menú, contacto, footer, etc.):
 ${pageText}
 """
 
-Devolvé EXCLUSIVAMENTE un objeto JSON (sin markdown, sin texto adicional) con esta forma exacta:
-{
-  "nombre": "Nombre del restaurante",
-  "direccion": "Dirección completa incluyendo código postal, o null si no se encuentra",
-  "pais": "uno de: Inglaterra, Escocia, Gales, Irlanda del Norte, o null si no se puede determinar",
-  "county": "condado/county del Reino Unido correspondiente a la dirección, o null si no se puede determinar",
-  "telefono": "número de teléfono tal como aparece, o null",
-  "sitioWeb": "${url}",
-  "redes": [{"plataforma": "Instagram", "handle": "@usuario"}],
-  "categoria": "tipo de cocina/oferta si es identificable, ej: Parrilla, Empanadas, Steak Sandwiches, Café/Pastelería, Panadería, Delivery, Restaurante, o null"
-}
+IMPORTANTE: esta página puede mencionar UN SOLO local, o VARIOS locales de la misma cadena/marca (por ejemplo una página "Locations" o "Our Locations" con varias sucursales, cada una con su propia dirección). Identificá TODOS los locales físicos distintos que aparezcan, cada uno como una entrada separada.
+
+Devolvé EXCLUSIVAMENTE un arreglo JSON (sin markdown, sin texto adicional), con un objeto por cada local físico encontrado, con esta forma exacta:
+[
+  {
+    "nombre": "Nombre del restaurante — si hay más de un local, agregá el barrio/zona para diferenciarlos, ej: 'De Nadas Empanadas – Notting Hill'",
+    "direccion": "Dirección completa de ESE local incluyendo código postal, o null si no se encuentra",
+    "pais": "uno de: Inglaterra, Escocia, Gales, Irlanda del Norte, o null si no se puede determinar",
+    "county": "condado/county del Reino Unido correspondiente a la dirección de ESE local, o null si no se puede determinar",
+    "telefono": "número de teléfono de ESE local si se especifica uno distinto, o el general si es el único que hay, o null",
+    "sitioWeb": "${url}",
+    "redes": [{"plataforma": "Instagram", "handle": "@usuario"}],
+    "categoria": "tipo de cocina/oferta si es identificable, ej: Parrilla, Empanadas, Steak Sandwiches, Café/Pastelería, Panadería, Delivery, Restaurante, o null"
+  }
+]
 
 Reglas:
+- Si hay un solo local, el arreglo tiene un solo elemento igual.
 - Si el sitio menciona explícitamente el county/condado, usalo. Si no, inferilo de la ciudad/código postal si es posible con certeza razonable; si no estás seguro, dejalo en null.
-- "redes" es un array vacío si no se encuentra ninguna red social.
-- No inventes datos que no aparezcan en el texto.`;
+- "redes" es un array vacío si no se encuentra ninguna red social (mismas redes para todos los locales si son las de la marca en general).
+- No inventes datos que no aparezcan en el texto.
+- No incluyas locales marcados como "próximamente"/"coming soon" que todavía no tengan dirección física.`;
 }
 
 async function callGemini(prompt) {
@@ -172,52 +178,69 @@ async function main() {
 
   const pageText = await fetchPageText(url);
   const prompt = buildPrompt(url, pageText);
-  const extracted = await callGemini(prompt);
+  const extractedList = await callGemini(prompt);
 
-  if (!extracted.nombre) {
-    throw new Error('No se pudo identificar el nombre del restaurante en la página.');
+  if (!Array.isArray(extractedList) || extractedList.length === 0) {
+    throw new Error('Gemini no devolvió ningún local válido para esta página.');
   }
-  if (extracted.pais && !PAISES_VALIDOS.includes(extracted.pais)) {
-    console.warn(`País "${extracted.pais}" no reconocido, se guarda igual como texto libre.`);
-  }
+  console.log(`Locales encontrados en la página: ${extractedList.length}`);
 
   const existing = loadExisting();
-  const dup = findDuplicate(existing, extracted);
-  if (dup) {
-    console.log(`Ya existe un restaurante similar: "${dup.nombre}" (id: ${dup.id}). No se agrega duplicado.`);
-    console.log('Si es información nueva del mismo lugar, actualizalo manualmente en restaurants.json.');
-    return;
-  }
-
-  let slug = slugify(extracted.nombre);
   const slugsExistentes = new Set(existing.map(r => r.id));
-  let finalSlug = slug;
-  let n = 2;
-  while (slugsExistentes.has(finalSlug)) {
-    finalSlug = `${slug}-${n}`;
-    n++;
+
+  let agregados = 0;
+  let duplicados = 0;
+  let invalidos = 0;
+
+  for (const extracted of extractedList) {
+    if (!extracted.nombre) {
+      console.warn('⚠️ Local sin nombre, se descarta.');
+      invalidos++;
+      continue;
+    }
+    if (extracted.pais && !PAISES_VALIDOS.includes(extracted.pais)) {
+      console.warn(`País "${extracted.pais}" no reconocido para "${extracted.nombre}", se guarda igual como texto libre.`);
+    }
+
+    const dup = findDuplicate(existing, extracted);
+    if (dup) {
+      console.log(`⏭️ Ya existe un local similar a "${extracted.nombre}" (id: ${dup.id}). No se agrega duplicado.`);
+      duplicados++;
+      continue;
+    }
+
+    let slug = slugify(extracted.nombre);
+    let finalSlug = slug;
+    let n = 2;
+    while (slugsExistentes.has(finalSlug)) {
+      finalSlug = `${slug}-${n}`;
+      n++;
+    }
+    slugsExistentes.add(finalSlug);
+
+    const nuevo = {
+      id: finalSlug,
+      nombre: extracted.nombre,
+      pais: extracted.pais || null,
+      county: extracted.county || null,
+      direccion: extracted.direccion || null,
+      mapsUrl: buildMapsUrl(extracted.direccion),
+      telefono: extracted.telefono || null,
+      sitioWeb: extracted.sitioWeb || url,
+      redes: Array.isArray(extracted.redes) ? extracted.redes : [],
+      categoria: extracted.categoria || null,
+      fechaAgregado: new Date().toISOString().slice(0, 10)
+    };
+
+    existing.push(nuevo);
+    agregados++;
+    console.log(`✅ Agregado: ${nuevo.nombre} (${nuevo.direccion || 'sin dirección'})`);
   }
 
-  const nuevo = {
-    id: finalSlug,
-    nombre: extracted.nombre,
-    pais: extracted.pais || null,
-    county: extracted.county || null,
-    direccion: extracted.direccion || null,
-    mapsUrl: buildMapsUrl(extracted.direccion),
-    telefono: extracted.telefono || null,
-    sitioWeb: extracted.sitioWeb || url,
-    redes: Array.isArray(extracted.redes) ? extracted.redes : [],
-    categoria: extracted.categoria || null,
-    fechaAgregado: new Date().toISOString().slice(0, 10)
-  };
-
-  existing.push(nuevo);
   existing.sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
   fs.writeFileSync(DATA_PATH, JSON.stringify(existing, null, 2) + '\n', 'utf-8');
 
-  console.log('Restaurante agregado:');
-  console.log(JSON.stringify(nuevo, null, 2));
+  console.log(`\nResumen: ${agregados} agregados, ${duplicados} ya existentes, ${invalidos} inválidos.`);
 }
 
 main().catch(err => {
