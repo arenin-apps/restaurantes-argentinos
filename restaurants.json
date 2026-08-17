@@ -15,7 +15,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5193823,
+    "longitude": -0.0996535
   },
   {
     "id": "bar-buenos-aires-fiesta-solihull",
@@ -33,7 +35,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 52.4134647,
+    "longitude": -1.8270855
   },
   {
     "id": "barra-10",
@@ -69,7 +73,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.0008664,
+    "longitude": -0.1053759
   },
   {
     "id": "bife-london",
@@ -87,7 +93,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5156795,
+    "longitude": -0.0753621
   },
   {
     "id": "bocas",
@@ -105,7 +113,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5242579,
+    "longitude": -0.1029396
   },
   {
     "id": "buen-ayre",
@@ -123,7 +133,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5368592,
+    "longitude": -0.0614678
   },
   {
     "id": "buenasado-bluewater",
@@ -141,7 +153,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4402598,
+    "longitude": 0.2721442
   },
   {
     "id": "buenasado-bristol",
@@ -159,7 +173,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4670635,
+    "longitude": -2.6123469
   },
   {
     "id": "buenasado-reading",
@@ -208,7 +224,9 @@
     "sitioWeb": null,
     "redes": [],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4872686,
+    "longitude": -0.16926
   },
   {
     "id": "buenos-aires-cafe-blackheath",
@@ -226,7 +244,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4671634,
+    "longitude": 0.0072725
   },
   {
     "id": "buenos-aires-nights-ashford",
@@ -244,7 +264,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.1500727,
+    "longitude": 0.8731523
   },
   {
     "id": "buenos-aires-nights-canterbury",
@@ -262,7 +284,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.2789111,
+    "longitude": 1.080856
   },
   {
     "id": "buenos-aires-nights-maidstone",
@@ -280,7 +304,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.2724731,
+    "longitude": 0.5203093
   },
   {
     "id": "buenos-aires-steakhouse-chiswick",
@@ -298,7 +324,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4936122,
+    "longitude": -0.2549336
   },
   {
     "id": "buenos-aires-steakhouse-reigate",
@@ -316,7 +344,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.2383239,
+    "longitude": -0.2097371
   },
   {
     "id": "buenos-aires-steakhouse-richmond",
@@ -352,7 +382,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4226752,
+    "longitude": -0.2096812
   },
   {
     "id": "casa-malevo",
@@ -370,7 +402,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5146081,
+    "longitude": -0.1645883
   },
   {
     "id": "chacarero-empanada-house",
@@ -388,7 +422,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4601637,
+    "longitude": -0.0750493
   },
   {
     "id": "chamuyo-bayswater",
@@ -406,7 +442,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.512465,
+    "longitude": -0.1872418
   },
   {
     "id": "chamuyo-brighton",
@@ -424,7 +462,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 50.8214376,
+    "longitude": -0.1430114
   },
   {
     "id": "chango-bank-royal-exchange",
@@ -442,7 +482,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5137316,
+    "longitude": -0.0875475
   },
   {
     "id": "chango-high-street-kensington",
@@ -478,7 +520,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5710512,
+    "longitude": -0.1486087
   },
   {
     "id": "chango-mayfair",
@@ -496,7 +540,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5124809,
+    "longitude": -0.1457623
   },
   {
     "id": "chango-parsons-green",
@@ -514,7 +560,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.472567,
+    "longitude": -0.2016902
   },
   {
     "id": "chango-richmond",
@@ -532,7 +580,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4603665,
+    "longitude": -0.306648
   },
   {
     "id": "chango-wandsworth-town",
@@ -550,7 +600,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4604563,
+    "longitude": -0.1878608
   },
   {
     "id": "chango-wimbledon",
@@ -568,7 +620,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4245454,
+    "longitude": -0.2163861
   },
   {
     "id": "chimichurris",
@@ -586,7 +640,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5007239,
+    "longitude": -0.098987
   },
   {
     "id": "el-gaucho",
@@ -604,7 +660,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 53.9570121,
+    "longitude": -1.0760949
   },
   {
     "id": "fiesta-del-asado-edgbaston",
@@ -622,7 +680,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 52.470943,
+    "longitude": -1.9244472
   },
   {
     "id": "fiesta-del-asado-shirley",
@@ -640,7 +700,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 52.4134647,
+    "longitude": -1.8270855
   },
   {
     "id": "flame-restaurant-asador-grill",
@@ -676,7 +738,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 52.4816021,
+    "longitude": -1.9001089
   },
   {
     "id": "gaucho-broadgate",
@@ -694,7 +758,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5194193,
+    "longitude": -0.0841065
   },
   {
     "id": "gaucho-canary-wharf",
@@ -712,7 +778,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5053433,
+    "longitude": -0.0279451
   },
   {
     "id": "gaucho-cardiff",
@@ -748,7 +816,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.514548,
+    "longitude": -0.111279
   },
   {
     "id": "gaucho-charlotte-street",
@@ -766,7 +836,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5195068,
+    "longitude": -0.1358199
   },
   {
     "id": "gaucho-city",
@@ -784,7 +856,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5127258,
+    "longitude": -0.0852031
   },
   {
     "id": "gaucho-covent-garden",
@@ -802,7 +876,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5130106,
+    "longitude": -0.123941
   },
   {
     "id": "gaucho-edinburgh",
@@ -838,7 +914,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 55.860843,
+    "longitude": -4.2555787
   },
   {
     "id": "gaucho-hampstead",
@@ -856,7 +934,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.557494,
+    "longitude": -0.1783185
   },
   {
     "id": "gaucho-leeds",
@@ -874,7 +954,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 53.7988754,
+    "longitude": -1.5470556
   },
   {
     "id": "gaucho-liverpool",
@@ -892,7 +974,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 53.3921383,
+    "longitude": -3.0127801
   },
   {
     "id": "gaucho-manchester",
@@ -946,7 +1030,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5097371,
+    "longitude": -0.1378603
   },
   {
     "id": "gaucho-richmond",
@@ -982,7 +1068,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4929063,
+    "longitude": -0.1676682
   },
   {
     "id": "gaucho-the-o2",
@@ -1000,7 +1088,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5029366,
+    "longitude": 0.0032029
   },
   {
     "id": "gaucho-tower-bridge",
@@ -1018,7 +1108,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5051331,
+    "longitude": -0.0803967
   },
   {
     "id": "la-boca",
@@ -1036,7 +1128,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 53.5227681,
+    "longitude": -1.1335312
   },
   {
     "id": "la-patagonia",
@@ -1054,7 +1148,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5353085,
+    "longitude": -0.1394656
   },
   {
     "id": "la-plata-steakhouse",
@@ -1072,7 +1168,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4658091,
+    "longitude": -0.2666867
   },
   {
     "id": "la-querencia",
@@ -1090,7 +1188,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 55.9632462,
+    "longitude": -3.1782196
   },
   {
     "id": "la-vaca-ardiente",
@@ -1108,7 +1208,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 55.9429512,
+    "longitude": -3.2866273
   },
   {
     "id": "latinoamerica",
@@ -1126,7 +1228,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 50.9404266,
+    "longitude": 0.3699978
   },
   {
     "id": "los-amigos",
@@ -1144,7 +1248,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 55.9456776,
+    "longitude": -3.217102
   },
   {
     "id": "los-argentinos",
@@ -1162,7 +1268,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 55.9389517,
+    "longitude": -3.1803682
   },
   {
     "id": "los-toros",
@@ -1180,7 +1288,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 56.0713724,
+    "longitude": -3.4616183
   },
   {
     "id": "malevo-tower-bridge",
@@ -1198,7 +1308,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5000273,
+    "longitude": -0.0785159
   },
   {
     "id": "meet-steakhouse",
@@ -1211,7 +1323,9 @@
     "sitioWeb": "https://meetsteakhouse.co.uk/",
     "redes": [],
     "categoria": "Parrilla",
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 53.4055197,
+    "longitude": -2.9932318
   },
   {
     "id": "ok13-grill",
@@ -1229,7 +1343,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4351321,
+    "longitude": -0.1573755
   },
   {
     "id": "parrilla-argentinian-grill-loanhead",
@@ -1247,7 +1363,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 55.8802472,
+    "longitude": -3.1517024
   },
   {
     "id": "parrilla-argentinian-grill-musselburgh",
@@ -1265,7 +1383,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 55.943143,
+    "longitude": -3.0477472
   },
   {
     "id": "portena-borough-market",
@@ -1283,9 +1403,11 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.505136,
+    "longitude": -0.0908675
   },
-    {
+  {
     "id": "santa-maria-del-sur",
     "nombre": "Santa Maria Del Sur",
     "pais": "Inglaterra",
@@ -1301,7 +1423,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.4701876,
+    "longitude": -0.1496829
   },
   {
     "id": "sonrisa-leicester",
@@ -1319,7 +1443,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 52.6342514,
+    "longitude": -1.1357789
   },
   {
     "id": "sucre",
@@ -1337,7 +1463,9 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5143833,
+    "longitude": -0.1388711
   },
   {
     "id": "taylor-clay-grill-bullitt-hotel",
@@ -1368,7 +1496,9 @@
     "sitioWeb": "https://thebullsteakexpertrestaurant.co.uk",
     "redes": [],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5195045,
+    "longitude": -0.1173056
   },
   {
     "id": "wild-tango",
@@ -1381,7 +1511,9 @@
     "sitioWeb": "https://wildtango.co.uk/",
     "redes": [],
     "categoria": "Restaurante",
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 52.6313001,
+    "longitude": -1.1320952
   },
   {
     "id": "zoilo",
@@ -1399,6 +1531,8 @@
       }
     ],
     "categoria": null,
-    "fechaAgregado": "2026-08-16"
+    "fechaAgregado": "2026-08-16",
+    "latitude": 51.5160567,
+    "longitude": -0.1521271
   }
 ]
