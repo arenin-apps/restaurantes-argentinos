@@ -136,6 +136,54 @@
   }
   .controls button.reset:hover { border-color: var(--ember); color: var(--ember); }
 
+  .controls button.nearest {
+    background: var(--ember);
+    border: 1px solid var(--ember);
+    color: var(--bg);
+    border-radius: 9px;
+    padding: 11px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+  .controls button.nearest:hover { background: var(--ember-soft-hover, #e8a565); }
+  .controls button.nearest:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  .controls button.nearest.active {
+    background: var(--bg-alt);
+    color: var(--ember);
+    border-color: var(--ember);
+  }
+
+  .nearest-status {
+    margin: -18px 0 22px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 13px;
+    background: var(--ember-soft);
+    color: var(--ember);
+    border: 1px solid rgba(217,138,79,0.3);
+  }
+  .nearest-status.error {
+    background: rgba(220,80,80,0.1);
+    color: #e08080;
+    border-color: rgba(220,80,80,0.3);
+  }
+
+  .distance-badge {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ember);
+    background: var(--ember-soft);
+    border-radius: 999px;
+    padding: 4px 10px;
+    white-space: nowrap;
+  }
+
   .count-row {
     display: flex;
     justify-content: space-between;
@@ -275,7 +323,7 @@
 
 <header>
   <h1>Restaurantes Argentinos</h1>
-  <p class="sub">Restaurantes, parrillas, empanadas y sabores de casa, de punta a punta del Reino Unido.</p>
+  <p class="sub">Restaurantes, parrillas, empanadas y sabores de casa,<br>de punta a punta del Reino Unido.</p>
 </header>
 
 <main>
@@ -287,8 +335,11 @@
     <select id="county">
       <option value="">Todos los condados</option>
     </select>
+    <button class="nearest" id="nearest">📍 El más cercano</button>
     <button class="reset" id="reset">Limpiar filtros</button>
   </div>
+
+  <div class="nearest-status" id="nearest-status" style="display:none;"></div>
 
   <div class="count-row">
     <span id="count">Cargando…</span>
@@ -309,15 +360,95 @@
 </footer>
 
 <script>
-  const state = { data: [], search: '', pais: '', county: '' };
+  const state = { data: [], search: '', pais: '', county: '', nearestMode: false, userCoords: null };
 
   const $search = document.getElementById('search');
   const $pais = document.getElementById('pais');
   const $county = document.getElementById('county');
   const $reset = document.getElementById('reset');
+  const $nearest = document.getElementById('nearest');
+  const $nearestStatus = document.getElementById('nearest-status');
   const $list = document.getElementById('list');
   const $empty = document.getElementById('empty');
   const $count = document.getElementById('count');
+
+  // Distancia entre dos puntos geográficos en km (fórmula de Haversine).
+  function distanceKm(lat1, lon1, lat2, lon2) {
+    const R = 6371;
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a =
+      Math.sin(dLat / 2) ** 2 +
+      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+      Math.sin(dLon / 2) ** 2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  function formatDistance(km) {
+    return km < 1 ? `${Math.round(km * 1000)} m` : `${km.toFixed(1)} km`;
+  }
+
+  function showNearestStatus(message, isError) {
+    $nearestStatus.textContent = message;
+    $nearestStatus.className = 'nearest-status' + (isError ? ' error' : '');
+    $nearestStatus.style.display = message ? 'block' : 'none';
+  }
+
+  function exitNearestMode() {
+    state.nearestMode = false;
+    state.userCoords = null;
+    $nearest.classList.remove('active');
+    $nearest.textContent = '📍 El más cercano';
+    showNearestStatus('');
+    render();
+  }
+
+  function enterNearestMode() {
+    if (!navigator.geolocation) {
+      showNearestStatus('Tu navegador no admite geolocalización.', true);
+      return;
+    }
+    $nearest.disabled = true;
+    $nearest.textContent = 'Buscando tu ubicación…';
+    showNearestStatus('');
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        state.userCoords = { lat: pos.coords.latitude, lon: pos.coords.longitude };
+        state.nearestMode = true;
+        state.search = '';
+        state.pais = '';
+        state.county = '';
+        $search.value = '';
+        $pais.value = '';
+        $county.value = '';
+        $nearest.disabled = false;
+        $nearest.textContent = '✕ Ver todos';
+        $nearest.classList.add('active');
+        render();
+      },
+      (err) => {
+        $nearest.disabled = false;
+        $nearest.textContent = '📍 El más cercano';
+        let msg = 'No pudimos obtener tu ubicación.';
+        if (err.code === err.PERMISSION_DENIED) {
+          msg = 'Necesitamos permiso de ubicación para mostrarte los más cercanos. Revisá los permisos del sitio en tu navegador.';
+        } else if (err.code === err.TIMEOUT) {
+          msg = 'La búsqueda de ubicación tardó demasiado. Probá de nuevo.';
+        }
+        showNearestStatus(msg, true);
+      },
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 300000 }
+    );
+  }
+
+  $nearest.addEventListener('click', () => {
+    if (state.nearestMode) {
+      exitNearestMode();
+    } else {
+      enterNearestMode();
+    }
+  });
 
   function normalize(str) {
     return (str || '').toString().toLowerCase()
@@ -345,12 +476,15 @@
     return platform.slice(0,2).toUpperCase();
   }
 
-  function renderCard(r) {
+  function renderCard(r, distanceLabel) {
     const loc = [r.county, r.pais].filter(Boolean).join(', ');
     let html = `<div class="card">
       <div class="card-top">
         <h3>${r.nombre}</h3>
-        ${loc ? `<span class="tag-location">${loc}</span>` : ''}
+        <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+          ${distanceLabel ? `<span class="distance-badge">${distanceLabel}</span>` : ''}
+          ${loc ? `<span class="tag-location">${loc}</span>` : ''}
+        </div>
       </div>`;
 
     if (r.direccion) {
@@ -393,6 +527,33 @@
   }
 
   function render() {
+    if (state.nearestMode && state.userCoords) {
+      const withCoords = state.data.filter(
+        (r) => typeof r.latitude === 'number' && typeof r.longitude === 'number'
+      );
+      const withDistance = withCoords.map((r) => ({
+        r,
+        km: distanceKm(state.userCoords.lat, state.userCoords.lon, r.latitude, r.longitude)
+      }));
+      withDistance.sort((a, b) => a.km - b.km);
+      const nearest = withDistance.slice(0, 10);
+
+      $count.textContent = nearest.length
+        ? `Los ${nearest.length} restaurantes más cercanos a vos`
+        : 'No encontramos restaurantes con coordenadas cargadas todavía';
+
+      if (!nearest.length) {
+        $list.innerHTML = '';
+        $empty.style.display = 'block';
+        return;
+      }
+      $empty.style.display = 'none';
+      $list.innerHTML = nearest
+        .map(({ r, km }) => renderCard(r, formatDistance(km)))
+        .join('');
+      return;
+    }
+
     const filtered = applyFilters();
     $count.textContent = filtered.length === 1
       ? '1 restaurante encontrado'
@@ -407,7 +568,7 @@
     $list.innerHTML = filtered
       .slice()
       .sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'))
-      .map(renderCard)
+      .map((r) => renderCard(r))
       .join('');
   }
 
@@ -430,15 +591,25 @@
       paises.map(p => `<option value="${p}">${p}</option>`).join('');
   }
 
-  $search.addEventListener('input', e => { state.search = e.target.value; render(); });
+  $search.addEventListener('input', e => {
+    if (state.nearestMode) exitNearestMode();
+    state.search = e.target.value;
+    render();
+  });
   $pais.addEventListener('change', e => {
+    if (state.nearestMode) exitNearestMode();
     state.pais = e.target.value;
     state.county = '';
     populateCountyOptions();
     render();
   });
-  $county.addEventListener('change', e => { state.county = e.target.value; render(); });
+  $county.addEventListener('change', e => {
+    if (state.nearestMode) exitNearestMode();
+    state.county = e.target.value;
+    render();
+  });
   $reset.addEventListener('click', () => {
+    if (state.nearestMode) exitNearestMode();
     state.search = ''; state.pais = ''; state.county = '';
     $search.value = ''; $pais.value = ''; $county.value = '';
     populateCountyOptions();
