@@ -1,0 +1,31 @@
+name: Geocodificar restaurantes
+
+on:
+  workflow_dispatch:
+
+jobs:
+  geocode:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Geocodificar direcciones faltantes
+        run: node geocode-restaurants.js
+
+      - name: Commit y push si hubo cambios
+        run: |
+          git config user.name "arenin-bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet restaurants.json; then
+            echo "Sin cambios en restaurants.json"
+          else
+            git add restaurants.json
+            git commit -m "Geocodificar restaurantes sin coordenadas"
+            git push
+          fi
