@@ -1436,6 +1436,19 @@
     "longitude": -3.4616183
   },
   {
+    "id": "maestro-asador",
+    "nombre": "Maestro Asador",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": null,
+    "mapsUrl": null,
+    "telefono": null,
+    "sitioWeb": "https://cafe-restaurant-bar.uk/london/restaurant/maestro-asador/",
+    "redes": [],
+    "categoria": "Parrilla",
+    "fechaAgregado": "2026-08-20"
+  },
+  {
     "id": "malevo-tower-bridge",
     "nombre": "Malevo Tower Bridge",
     "pais": "Inglaterra",
