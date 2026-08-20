@@ -460,6 +460,7 @@
   }
 
   function socialUrl(plataforma, handle) {
+    if (!plataforma || !handle) return null;
     const p = plataforma.toLowerCase();
     let h = handle.trim();
     if (h.startsWith('@')) h = h.slice(1);
@@ -472,6 +473,7 @@
   }
 
   function iconFor(platform) {
+    if (!platform) return '';
     const p = platform.toLowerCase();
     if (p.includes('instagram')) return 'IG';
     if (p.includes('facebook')) return 'FB';
@@ -504,14 +506,17 @@
       html += `<div class="card-row"><span class="icon">🌐</span><span><a href="${r.sitioWeb}" target="_blank" rel="noopener">${r.sitioWeb.replace(/^https?:\/\//, '')}</a></span></div>`;
     }
     if (r.redes && r.redes.length) {
-      html += `<div class="socials">`;
-      r.redes.forEach(s => {
-        const url = socialUrl(s.plataforma, s.handle);
-        html += url
-          ? `<a class="social-chip" href="${url}" target="_blank" rel="noopener">${iconFor(s.plataforma)} ${s.handle}</a>`
-          : `<span class="social-chip">${iconFor(s.plataforma)} ${s.handle}</span>`;
-      });
-      html += `</div>`;
+      const redesValidas = r.redes.filter(s => s && s.handle);
+      if (redesValidas.length) {
+        html += `<div class="socials">`;
+        redesValidas.forEach(s => {
+          const url = socialUrl(s.plataforma, s.handle);
+          html += url
+            ? `<a class="social-chip" href="${url}" target="_blank" rel="noopener">${iconFor(s.plataforma)} ${s.handle}</a>`
+            : `<span class="social-chip">${iconFor(s.plataforma)} ${s.handle}</span>`;
+        });
+        html += `</div>`;
+      }
     }
     html += `</div>`;
     return html;
