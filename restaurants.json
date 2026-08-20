@@ -1323,6 +1323,19 @@
     "longitude": -3.1782196
   },
   {
+    "id": "la-vaca-sheffield",
+    "nombre": "La Vaca – Sheffield",
+    "pais": "Inglaterra",
+    "county": "South Yorkshire",
+    "direccion": "Sheffield, South Yorkshire, England",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sheffield%2C%20South%20Yorkshire%2C%20England",
+    "telefono": null,
+    "sitioWeb": "https://www.tripadvisor.co.uk/Restaurant_Review-g186364-d3181525-Reviews-La_Vaca-Sheffield_South_Yorkshire_England.html",
+    "redes": [],
+    "categoria": "Restaurante",
+    "fechaAgregado": "2026-08-20"
+  },
+  {
     "id": "la-vaca-ardiente",
     "nombre": "La Vaca Ardiente",
     "pais": "Escocia",
