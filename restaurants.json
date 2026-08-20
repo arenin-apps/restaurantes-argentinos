@@ -782,19 +782,6 @@
     "longitude": -1.0760949
   },
   {
-    "id": "el-lomito-gerrards-cross",
-    "nombre": "El Lomito – Gerrards Cross",
-    "pais": "Inglaterra",
-    "county": null,
-    "direccion": null,
-    "mapsUrl": null,
-    "telefono": null,
-    "sitioWeb": "https://www.lomitorestaurants.com/contact-cwgs",
-    "redes": [],
-    "categoria": "Steak Sandwiches",
-    "fechaAgregado": "2026-08-20"
-  },
-  {
     "id": "el-lomito-northwood",
     "nombre": "El Lomito – Northwood",
     "pais": "Inglaterra",
