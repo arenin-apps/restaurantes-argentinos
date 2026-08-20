@@ -20,6 +20,19 @@
     "longitude": -0.0996535
   },
   {
+    "id": "baqueano",
+    "nombre": "Baqueano",
+    "pais": "Inglaterra",
+    "county": "East Sussex",
+    "direccion": "125 Western Road, Brighton, BN1 2AD",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=125%20Western%20Road%2C%20Brighton%2C%20BN1%202AD",
+    "telefono": "01273 911991",
+    "sitioWeb": "https://www.baqueano.co.uk/",
+    "redes": [],
+    "categoria": "Parrilla",
+    "fechaAgregado": "2026-08-20"
+  },
+  {
     "id": "bar-buenos-aires-fiesta-solihull",
     "nombre": "Bar Buenos Aires (Fiesta Solihull)",
     "pais": "Inglaterra",
@@ -644,7 +657,7 @@
     "latitude": 51.5007239,
     "longitude": -0.098987
   },
-    {
+  {
     "id": "de-nadas-empanadas-bethnal-green",
     "nombre": "De Nadas Empanadas – Bethnal Green",
     "pais": "Inglaterra",
