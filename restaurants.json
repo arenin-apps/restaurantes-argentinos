@@ -1420,6 +1420,19 @@
     "longitude": 0.3699978
   },
   {
+    "id": "lomito-gerrards-cross",
+    "nombre": "Lomito – Gerrards Cross",
+    "pais": "Inglaterra",
+    "county": "Buckinghamshire",
+    "direccion": "55, Packhorse Road, Gerrards Cross. SL9 8PE",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=55%2C%20Packhorse%20Road%2C%20Gerrards%20Cross.%20SL9%208PE",
+    "telefono": "01753 873 799",
+    "sitioWeb": "https://www.lomitorestaurants.com/contact-gerrards-cross",
+    "redes": [],
+    "categoria": "Parrilla",
+    "fechaAgregado": "2026-08-20"
+  },
+  {
     "id": "los-amigos",
     "nombre": "Los Amigos",
     "pais": "Escocia",
