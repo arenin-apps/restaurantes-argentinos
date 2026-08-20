@@ -1449,6 +1449,19 @@
     "fechaAgregado": "2026-08-20"
   },
   {
+    "id": "maestro-asador-camden",
+    "nombre": "Maestro Asador – Camden",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "80-188, Buckstreet Market – Unit 2.04, Camden High St, London NW1 8QP, United Kingdom",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=80-188%2C%20Buckstreet%20Market%20%E2%80%93%20Unit%202.04%2C%20Camden%20High%20St%2C%20London%20NW1%208QP%2C%20United%20Kingdom",
+    "telefono": "0207983207359",
+    "sitioWeb": "https://hampsteadvillagelondon.com/maestro-asador-5783/",
+    "redes": [],
+    "categoria": "Parrilla",
+    "fechaAgregado": "2026-08-20"
+  },
+  {
     "id": "malevo-tower-bridge",
     "nombre": "Malevo Tower Bridge",
     "pais": "Inglaterra",
