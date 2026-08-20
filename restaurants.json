@@ -20,6 +20,19 @@
     "longitude": -0.0996535
   },
   {
+    "id": "asado-gaucho-peebles",
+    "nombre": "Asado Gaucho - Peebles",
+    "pais": "Escocia",
+    "county": "Scottish Borders",
+    "direccion": "1 Innerleithen Rd, Peebles EH45 8BA",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=1%20Innerleithen%20Rd%2C%20Peebles%20EH45%208BA",
+    "telefono": "07503760738",
+    "sitioWeb": "https://asadogaucho.co.uk/",
+    "redes": [],
+    "categoria": "Parrilla",
+    "fechaAgregado": "2026-08-20"
+  },
+  {
     "id": "baqueano",
     "nombre": "Baqueano",
     "pais": "Inglaterra",
