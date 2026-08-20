@@ -1243,6 +1243,24 @@
     "longitude": -0.0803967
   },
   {
+    "id": "grill-porteno-watford",
+    "nombre": "Grill Porteno – Watford",
+    "pais": "Inglaterra",
+    "county": "Hertfordshire",
+    "direccion": "Gade House, 46 High St, Watford WD17 1AY",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Gade%20House%2C%2046%20High%20St%2C%20Watford%20WD17%201AY",
+    "telefono": "07503036900",
+    "sitioWeb": "https://www.hellowatford.com/grill-porteno",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": null
+      }
+    ],
+    "categoria": "Parrilla",
+    "fechaAgregado": "2026-08-20"
+  },
+  {
     "id": "la-boca",
     "nombre": "La Boca",
     "pais": "Inglaterra",
