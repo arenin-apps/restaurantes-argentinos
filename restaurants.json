@@ -1404,6 +1404,84 @@
     "longitude": -0.0785159
   },
   {
+    "id": "malo-empanadas-brighton",
+    "nombre": "Malo Empanadas – Brighton",
+    "pais": "Inglaterra",
+    "county": "East Sussex",
+    "direccion": "11 Duke Street, Brighton & Hove, BN1 1AH",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=11%20Duke%20Street%2C%20Brighton%20%26%20Hove%2C%20BN1%201AH",
+    "telefono": null,
+    "sitioWeb": "https://malobrighton.co.uk/",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": null
+      },
+      {
+        "plataforma": "Instagram",
+        "handle": null
+      },
+      {
+        "plataforma": "TikTok",
+        "handle": null
+      }
+    ],
+    "categoria": "Empanadas",
+    "fechaAgregado": "2026-08-20"
+  },
+  {
+    "id": "malo-empanadas-hove",
+    "nombre": "Malo Empanadas – Hove",
+    "pais": "Inglaterra",
+    "county": "East Sussex",
+    "direccion": "120 Porland Road, Brighton & Hove, BN3 5DN",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=120%20Porland%20Road%2C%20Brighton%20%26%20Hove%2C%20BN3%205DN",
+    "telefono": null,
+    "sitioWeb": "https://malobrighton.co.uk/",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": null
+      },
+      {
+        "plataforma": "Instagram",
+        "handle": null
+      },
+      {
+        "plataforma": "TikTok",
+        "handle": null
+      }
+    ],
+    "categoria": "Empanadas",
+    "fechaAgregado": "2026-08-20"
+  },
+  {
+    "id": "malo-empanadas-kemptown",
+    "nombre": "Malo Empanadas – Kemptown",
+    "pais": "Inglaterra",
+    "county": "East Sussex",
+    "direccion": "90 St James Street, Brighton & Hove, BN2 1TP",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=90%20St%20James%20Street%2C%20Brighton%20%26%20Hove%2C%20BN2%201TP",
+    "telefono": null,
+    "sitioWeb": "https://malobrighton.co.uk/",
+    "redes": [
+      {
+        "plataforma": "Facebook",
+        "handle": null
+      },
+      {
+        "plataforma": "Instagram",
+        "handle": null
+      },
+      {
+        "plataforma": "TikTok",
+        "handle": null
+      }
+    ],
+    "categoria": "Empanadas",
+    "fechaAgregado": "2026-08-20"
+  },
+  {
     "id": "meet-steakhouse",
     "nombre": "Meet Steakhouse",
     "pais": "Inglaterra",
