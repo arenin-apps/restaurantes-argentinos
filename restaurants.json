@@ -20,6 +20,19 @@
     "longitude": -0.0996535
   },
   {
+    "id": "argento-steakhouse-southampton",
+    "nombre": "Argento Steakhouse — Southampton",
+    "pais": "Inglaterra",
+    "county": "Hampshire",
+    "direccion": "43-45 High St, Southampton, SO14 2NS",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=43-45%20High%20St%2C%20Southampton%2C%20SO14%202NS",
+    "telefono": "023 8033 9777",
+    "sitioWeb": "https://www.argentosteakhouse.com/contact",
+    "redes": [],
+    "categoria": "Parrilla",
+    "fechaAgregado": "2026-08-20"
+  },
+  {
     "id": "asado-gaucho-peebles",
     "nombre": "Asado Gaucho - Peebles",
     "pais": "Escocia",
