@@ -1274,6 +1274,19 @@
     "fechaAgregado": "2026-08-20"
   },
   {
+    "id": "guido-s-grill-camberwell",
+    "nombre": "Guido's Grill – Camberwell",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "179 Camberwell Rd, Camberwell, London SE5 0HB",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=179%20Camberwell%20Rd%2C%20Camberwell%2C%20London%20SE5%200HB",
+    "telefono": "020 3730 5422",
+    "sitioWeb": "https://guidosgrill.com/",
+    "redes": [],
+    "categoria": "Steakhouse",
+    "fechaAgregado": "2026-08-21"
+  },
+  {
     "id": "la-boca",
     "nombre": "La Boca",
     "pais": "Inglaterra",
