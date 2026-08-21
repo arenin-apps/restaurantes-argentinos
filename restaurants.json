@@ -1685,26 +1685,6 @@
     "longitude": -3.1517024
   },
   {
-    "id": "parrilla-argentinian-grill-musselburgh",
-    "nombre": "Parrilla Argentinian Grill (Musselburgh)",
-    "pais": "Escocia",
-    "county": "East Lothian",
-    "direccion": "76 High St, Musselburgh, EH21 7BX",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=76+High+St,+Musselburgh,+EH21+7BX",
-    "telefono": null,
-    "sitioWeb": "https://parrillaargentiniangrill.co.uk",
-    "redes": [
-      {
-        "plataforma": "Instagram",
-        "handle": "@parrillamusselburgh"
-      }
-    ],
-    "categoria": null,
-    "fechaAgregado": "2026-08-16",
-    "latitude": 55.943143,
-    "longitude": -3.0477472
-  },
-  {
     "id": "portena-borough-market",
     "nombre": "Porteña Borough Market",
     "pais": "Inglaterra",
