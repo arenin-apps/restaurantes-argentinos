@@ -1642,10 +1642,15 @@
     "pais": "Inglaterra",
     "county": "Kent",
     "direccion": "Harbour Approach Rd, Folkestone CT20 1QH, UK",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Harbour%20Approach%20Rd%2C%20Folkestone%20CT20%201QH%2C%20UK",
+    "mapsUrl": "https://maps.app.goo.gl/3EtVABy4NkBPec358",
     "telefono": null,
     "sitioWeb": "https://www.urbanary.co.uk/venues/folkestone/minutas-argentine-street-food-and-bar",
-    "redes": [],
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@minutasfolkestoneharbour"
+      }
+    ],
     "categoria": "Restaurante",
     "fechaAgregado": "2026-08-22"
   },
