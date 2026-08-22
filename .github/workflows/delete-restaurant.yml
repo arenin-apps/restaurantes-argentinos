@@ -1,0 +1,43 @@
+name: Eliminar restaurante
+
+on:
+  workflow_dispatch:
+    inputs:
+      identificador:
+        description: 'Nombre exacto o id del restaurante a eliminar'
+        required: true
+        type: string
+      confirmacion:
+        description: 'Escribí ELIMINAR (en mayúsculas) para confirmar'
+        required: true
+        type: string
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Eliminar restaurante
+        env:
+          IDENTIFICADOR: ${{ inputs.identificador }}
+          CONFIRMACION: ${{ inputs.confirmacion }}
+        run: node delete-restaurant.js
+
+      - name: Commit y push si hubo cambios
+        run: |
+          git config user.name "arenin-bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet restaurants.json; then
+            echo "Sin cambios en restaurants.json"
+          else
+            git add restaurants.json
+            git commit -m "Eliminar restaurante: ${{ inputs.identificador }}"
+            git push
+          fi
