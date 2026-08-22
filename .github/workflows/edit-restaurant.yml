@@ -1,0 +1,98 @@
+name: Editar restaurante
+
+on:
+  workflow_dispatch:
+    inputs:
+      identificador:
+        description: 'Nombre exacto o id del restaurante a editar'
+        required: true
+        type: string
+      nuevo_nombre:
+        description: 'Nuevo nombre (dejar vacío para no cambiar, o BORRAR para vaciar)'
+        required: false
+        type: string
+      nuevo_pais:
+        description: 'País (Inglaterra / Escocia / Gales / Irlanda del Norte)'
+        required: false
+        type: string
+      nuevo_county:
+        description: 'County'
+        required: false
+        type: string
+      nueva_direccion:
+        description: 'Dirección en texto (el link de Maps se regenera solo, salvo que fijes uno exacto abajo)'
+        required: false
+        type: string
+      nuevo_maps_url:
+        description: 'Link EXACTO de Google Maps (ej. https://maps.app.goo.gl/...) — pisa la búsqueda automática. BORRAR para volver al modo automático.'
+        required: false
+        type: string
+      nuevo_telefono:
+        description: 'Teléfono'
+        required: false
+        type: string
+      nuevo_sitio_web:
+        description: 'Sitio web'
+        required: false
+        type: string
+      nueva_categoria:
+        description: 'Categoría (Parrilla, Empanadas, Café...)'
+        required: false
+        type: string
+      nuevo_instagram:
+        description: 'Instagram — solo el @usuario'
+        required: false
+        type: string
+      nuevo_facebook:
+        description: 'Facebook — usuario o URL'
+        required: false
+        type: string
+      nueva_latitud:
+        description: 'Latitud (opcional, corrección manual)'
+        required: false
+        type: string
+      nueva_longitud:
+        description: 'Longitud (opcional, corrección manual)'
+        required: false
+        type: string
+
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Editar restaurante
+        env:
+          IDENTIFICADOR: ${{ inputs.identificador }}
+          NUEVO_NOMBRE: ${{ inputs.nuevo_nombre }}
+          NUEVO_PAIS: ${{ inputs.nuevo_pais }}
+          NUEVO_COUNTY: ${{ inputs.nuevo_county }}
+          NUEVA_DIRECCION: ${{ inputs.nueva_direccion }}
+          NUEVO_MAPS_URL: ${{ inputs.nuevo_maps_url }}
+          NUEVO_TELEFONO: ${{ inputs.nuevo_telefono }}
+          NUEVO_SITIO_WEB: ${{ inputs.nuevo_sitio_web }}
+          NUEVA_CATEGORIA: ${{ inputs.nueva_categoria }}
+          NUEVO_INSTAGRAM: ${{ inputs.nuevo_instagram }}
+          NUEVO_FACEBOOK: ${{ inputs.nuevo_facebook }}
+          NUEVA_LATITUD: ${{ inputs.nueva_latitud }}
+          NUEVA_LONGITUD: ${{ inputs.nueva_longitud }}
+        run: node edit-restaurant.js
+
+      - name: Commit y push si hubo cambios
+        run: |
+          git config user.name "arenin-bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet restaurants.json; then
+            echo "Sin cambios en restaurants.json"
+          else
+            git add restaurants.json
+            git commit -m "Editar restaurante: ${{ inputs.identificador }}"
+            git push
+          fi
