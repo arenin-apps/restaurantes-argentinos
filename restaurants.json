@@ -1346,7 +1346,20 @@
     "latitude": 51.4658091,
     "longitude": -0.2666867
   },
-    {
+  {
+    "id": "la-posta-wimbledon",
+    "nombre": "La Posta Wimbledon",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "296 Haydons Rd, London",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=296%20Haydons%20Rd%2C%20London",
+    "telefono": "+44 20 8013 3620",
+    "sitioWeb": "https://dineawardslondon.com/restaurants/la-posta-wimbledon",
+    "redes": [],
+    "categoria": "Restaurante",
+    "fechaAgregado": "2026-08-22"
+  },
+  {
     "id": "la-querencia",
     "nombre": "La Querencia",
     "pais": "Escocia",
