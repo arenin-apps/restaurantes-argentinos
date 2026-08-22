@@ -1355,7 +1355,12 @@
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=296%20Haydons%20Rd%2C%20London",
     "telefono": "+44 20 8013 3620",
     "sitioWeb": "https://dineawardslondon.com/restaurants/la-posta-wimbledon",
-    "redes": [],
+    "redes": [    
+      {
+        "plataforma": "Instagram",
+        "handle": "@la.posta_wimbledon"
+      }
+    ],
     "categoria": "Restaurante",
     "fechaAgregado": "2026-08-22"
   },
