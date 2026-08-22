@@ -1347,6 +1347,19 @@
     "longitude": -0.2666867
   },
   {
+    "id": "la-posta-wimbledon-wimbledon",
+    "nombre": "La Posta Wimbledon — Wimbledon",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "Wimbledon, London, England",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Wimbledon%2C%20London%2C%20England",
+    "telefono": null,
+    "sitioWeb": "https://www.tripadvisor.co.uk/Restaurant_Review-g186338-d25173322-Reviews-La_Posta_Wimbledon-London_England.html",
+    "redes": [],
+    "categoria": "Restaurante",
+    "fechaAgregado": "2026-08-22"
+  },
+  {
     "id": "la-querencia",
     "nombre": "La Querencia",
     "pais": "Escocia",
