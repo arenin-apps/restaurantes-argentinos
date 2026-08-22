@@ -1355,7 +1355,7 @@
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=296%20Haydons%20Rd%2C%20London",
     "telefono": "+44 20 8013 3620",
     "sitioWeb": "https://dineawardslondon.com/restaurants/la-posta-wimbledon",
-    "redes": [    
+    "redes": [
       {
         "plataforma": "Instagram",
         "handle": "@la.posta_wimbledon"
@@ -1635,6 +1635,19 @@
     "fechaAgregado": "2026-08-16",
     "latitude": 53.4055197,
     "longitude": -2.9932318
+  },
+  {
+    "id": "minutas-argentine-street-food-bar-folkestone",
+    "nombre": "MINUTAS ARGENTINE STREET FOOD & BAR – Folkestone",
+    "pais": "Inglaterra",
+    "county": "Kent",
+    "direccion": "Harbour Approach Rd, Folkestone CT20 1QH, UK",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Harbour%20Approach%20Rd%2C%20Folkestone%20CT20%201QH%2C%20UK",
+    "telefono": null,
+    "sitioWeb": "https://www.urbanary.co.uk/venues/folkestone/minutas-argentine-street-food-and-bar",
+    "redes": [],
+    "categoria": "Restaurante",
+    "fechaAgregado": "2026-08-22"
   },
   {
     "id": "ok13-grill",
