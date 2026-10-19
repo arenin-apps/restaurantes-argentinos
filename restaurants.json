@@ -539,6 +539,26 @@
     "longitude": -0.0875475
   },
   {
+    "id": "chango-clapham-common",
+    "nombre": "Chango Clapham Common",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "16 The Pavement, London, SW4 0HY",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=16+The+Pavement,+London,+SW4+0HY",
+    "telefono": null,
+    "sitioWeb": "https://chango.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@changoempanadasuk"
+      }
+    ],
+    "categoria": null,
+    "fechaAgregado": "2026-10-19",
+    "latitude": 51.462044,
+    "longitude": -0.139259
+  },
+  {
     "id": "chango-high-street-kensington",
     "nombre": "Chango High Street Kensington",
     "pais": "Inglaterra",
