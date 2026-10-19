@@ -1695,19 +1695,6 @@
     "longitude": -0.1573755
   },
   {
-    "id": "parilla-argentinian-grill-loanhead",
-    "nombre": "Parilla Argentinian Grill – Loanhead",
-    "pais": "Escocia",
-    "county": "Midlothian",
-    "direccion": "30-34 Fountain Pl, Loanhead EH20 9DY",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=30-34%20Fountain%20Pl%2C%20Loanhead%20EH20%209DY",
-    "telefono": "0131 440 4481",
-    "sitioWeb": "https://parrillaargentiniangrill.co.uk/venues/",
-    "redes": [],
-    "categoria": "Parrilla",
-    "fechaAgregado": "2026-08-20"
-  },
-  {
     "id": "parilla-argentinian-grill-musselburgh",
     "nombre": "Parilla Argentinian Grill – Musselburgh",
     "pais": "Escocia",
@@ -1722,12 +1709,12 @@
   },
   {
     "id": "parrilla-argentinian-grill-loanhead",
-    "nombre": "Parrilla Argentinian Grill (Loanhead)",
+    "nombre": "Parrilla Argentinian Grill – Loanhead",
     "pais": "Escocia",
     "county": "Midlothian / Edinburgh",
     "direccion": "30-34 Fountain Place, Loanhead, EH20 9DU",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=30-34+Fountain+Place,+Loanhead,+EH20+9DU",
-    "telefono": null,
+    "telefono": "0131 440 4481",
     "sitioWeb": "https://parrillaargentiniangrill.co.uk",
     "redes": [
       {
@@ -1735,7 +1722,7 @@
         "handle": "@parrillaloanhead"
       }
     ],
-    "categoria": null,
+    "categoria": "Parrilla",
     "fechaAgregado": "2026-08-16",
     "latitude": 55.8802472,
     "longitude": -3.1517024
