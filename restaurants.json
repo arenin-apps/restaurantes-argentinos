@@ -1887,5 +1887,25 @@
     "fechaAgregado": "2026-08-16",
     "latitude": 51.5160567,
     "longitude": -0.1521271
+  },
+  {
+    "id": "las-pampas-putney",
+    "nombre": "Las Pampas – Putney",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "22 Putney High Street, Putney, London, SW15 1SL",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=22%20Putney%20High%20Street%2C%20Putney%2C%20London%2C%20SW15%201SL",
+    "telefono": "020 8064 3569",
+    "sitioWeb": "https://laspampas.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@las_pampas_putney"
+      }
+    ],
+    "categoria": "Steakhouse",
+    "fechaAgregado": "2026-10-30",
+    "latitude": 51.465715,
+    "longitude": -0.214566
   }
 ]
