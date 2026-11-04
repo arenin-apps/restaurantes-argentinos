@@ -1907,5 +1907,25 @@
     "fechaAgregado": "2026-10-30",
     "latitude": 51.465715,
     "longitude": -0.214566
+  },
+  {
+    "id": "tamp-coffee-chiswick",
+    "nombre": "Tamp Coffee – Chiswick",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "1 Devonshire Road, Chiswick, London, W4 2EU",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=1%20Devonshire%20Road%2C%20Chiswick%2C%20London%2C%20W4%202EU",
+    "telefono": null,
+    "sitioWeb": "https://www.tampcoffee.co.uk",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@tampcoffeeuk"
+      }
+    ],
+    "categoria": "Empanadas",
+    "fechaAgregado": "2026-11-04",
+    "latitude": 51.491997,
+    "longitude": -0.25615
   }
 ]
