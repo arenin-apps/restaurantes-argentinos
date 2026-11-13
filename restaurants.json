@@ -1927,5 +1927,29 @@
     "fechaAgregado": "2026-11-04",
     "latitude": 51.491997,
     "longitude": -0.25615
+  },
+  {
+    "id": "cantor-milanesas-brighton",
+    "nombre": "Cantor Milanesas – Brighton",
+    "pais": "Inglaterra",
+    "county": "East Sussex",
+    "direccion": "72 Western Road, Brighton, BN1 2HA",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=72%20Western%20Road%2C%20Brighton%2C%20BN1%202HA",
+    "telefono": "01273 435926",
+    "sitioWeb": "https://www.wearecantor.co.uk/",
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@wearecantor"
+      },
+      {
+        "plataforma": "TikTok",
+        "handle": "@cantor.milanesas"
+      }
+    ],
+    "categoria": "Milanesas",
+    "fechaAgregado": "2026-11-13",
+    "latitude": 50.824246,
+    "longitude": -0.14962
   }
 ]
