@@ -1951,5 +1951,25 @@
     "fechaAgregado": "2026-11-13",
     "latitude": 50.824246,
     "longitude": -0.14962
+  },
+  {
+    "id": "la-napolitana-west-green-road",
+    "nombre": "La Napolitana – West Green Road",
+    "pais": "Inglaterra",
+    "county": "Greater London",
+    "direccion": "470 West Green Road, London, N15 3PT",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=470%20West%20Green%20Road%2C%20London%2C%20N15%203PT",
+    "telefono": null,
+    "sitioWeb": null,
+    "redes": [
+      {
+        "plataforma": "Instagram",
+        "handle": "@pizzeria.lanapolitana"
+      }
+    ],
+    "categoria": "Empanadas",
+    "fechaAgregado": "2026-11-24",
+    "latitude": 51.587152,
+    "longitude": -0.097356
   }
 ]
